@@ -1,0 +1,14 @@
+{
+  "name": "gabes-math-tutorials",
+  "version": "1.0.0",
+  "description": "Node.js application for Gabes Math Tutorials",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "gabe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
