@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Create elements
+   
     const html = document.createElement('html');
     const head = document.createElement('head');
     const title = document.createElement('title');
     title.textContent = 'Gabes Math Tutorials';
     const body = document.createElement('body');
   
-    // Create style element and add CSS rules
+
     const style = document.createElement('style');
     style.textContent = `
       body, button { margin: 0; font-family: Arial, sans-serif; }
@@ -24,14 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
       .favicon-selector option { background: #222; color: #ff0000; }
     `;
   
-    // Create header
+   
     const header = document.createElement('div');
     header.className = 'header';
     const headerText = document.createElement('h1');
     headerText.textContent = 'Gabes Math Tutorials';
     header.appendChild(headerText);
   
-    // Create sidebar
     const sidebar = document.createElement('div');
     sidebar.className = 'sidebar';
     const navLink = document.createElement('a');
@@ -43,30 +42,28 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     sidebar.appendChild(navLink);
   
-    // Create iframe container
     const iframeContainer = document.createElement('div');
     iframeContainer.className = 'iframe-container';
     const iframe = document.createElement('iframe');
     iframe.id = 'proxyFrame';
     iframeContainer.appendChild(iframe);
   
-    // Append elements to body
+ 
     body.appendChild(header);
     body.appendChild(sidebar);
     body.appendChild(iframeContainer);
   
-    // Append style and head elements
+
     head.appendChild(style);
   
-    // Append head and body to HTML
     html.appendChild(head);
     html.appendChild(body);
   
-    // Set the HTML content of the document
+    
     document.documentElement.innerHTML = '';
     document.documentElement.appendChild(html);
   
-    // Function to load a new page in the iframe
+    
     function loadPage(url) {
       document.getElementById('proxyFrame').src = url;
     }
